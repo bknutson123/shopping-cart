@@ -1,67 +1,55 @@
 var express = require('express');
 var router = express.Router();
+var mongoose = require('mongoose');
+var Shopping = mongoose.model('Shopping');
 
-/* Set up mongoose in order to connect to mongo database */
-var mongoose = require('mongoose'); //Adds mongoose as a usable dependency
-
-mongoose.connect('mongodb://localhost/commentDB', { useNewUrlParser: true }); //Connects to a mongo database called "commentDB"
-
-var commentSchema = mongoose.Schema({ //Defines the Schema for this database
-    Name: String,
-    Comment: String
+router.param('item', function(req, res, next, id) {
+  var query = Shopping.findById(id);
+  query.exec(function (err, item){
+    if (err) { return next(err); }
+    if (!item) { return next(new Error("can't find item")); }
+    req.item = item;
+    return next();
+  });
 });
 
-var Comment = mongoose.model('Comment', commentSchema); //Makes an object from that schema as a model
-
-var db = mongoose.connection; //Saves the connection as a variable to use
-db.on('error', console.error.bind(console, 'connection error:')); //Checks for connection errors
-db.once('open', function() { //Lets us know when we're connected
-    console.log('Connected');
+router.get('/shopping/:item',function(req,res) {
+  res.json(req.item);
 });
 
-router.post('/comment', function(req, res, next) {
-    console.log("POST comment route");
-    console.log(req.body);
-    var newComment = new Comment(req.body);
-    newComment.save(function(err, result) {
-        if (err) { console.log("got error") }
-        else {
-            console.log("save worked");
-            console.log(result);
-            res.sendStatus(200);
-        }
-    })
-    // res.sendStatus(200);
+router.put('/shopping/:item/Uporder', function(req, res, next) {
+  console.log("Put Route: "+req.item);
+  req.item.Uporder(function(err, item){
+    if (err) { return next(err); }
+    res.json(item);
+  });
 });
 
-router.delete('/delete', function(req, res, next) {
-    Comment.deleteMany({}, function() {
-        console.log("removed!!");
-    })
-})
+router.delete('/shopping/:item',function(req,res) {
+  req.item.remove();
+  res.sendStatus(200);
+});
 
-router.get('/search', function(req, res, next) {
-    console.log("searching!!");
-    console.log("this is req.body: ", req.query.str);
-    Comment.find({Name: req.query.str}, function(err, commentList) {
-        if (err) return console.error(err); //If there's an error, print it out
-        else {
-            console.log(commentList);
-            res.json(commentList);
-        }
-    });
-})
+router.get('/shopping', function(req, res, next) {
+  console.log("Get Route");
+  Shopping.find(function(err, store){
+    if(err){ console.log("Error"); return next(err); }
+    res.json(store);
+  console.log("res.json Get Route");
+  });
+  console.log("returning Get Route");
+});
 
-/* GET comments from database */
-router.get('/comment', function(req, res, next) {
-    console.log("In the GET route");
-    Comment.find(function(err, commentList) { //Calls the find() method on your database
-        if (err) return console.error(err); //If there's an error, print it out
-        else {
-            console.log(commentList);
-            res.json(commentList); //Then send the comments
-        }
-    })
+router.post('/shopping', function(req, res, next) {
+  console.log("Post Route");
+  var item = new Shopping(req.body);
+  console.log(item);
+  item.save(function(err, item){
+		console.log("Error "+err);
+		if(err){  return next(err); }
+    console.log("Post Route before json");
+		res.json(item);
+	});
 });
 
 module.exports = router;

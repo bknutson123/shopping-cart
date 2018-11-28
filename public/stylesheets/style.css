@@ -6,22 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
-#form {
-    text-align: center;
-}
 
-#buttons {
+#title, #products, #cart {
   text-align: center;
 }
-#json {
 
-}
-#done {
-
-}
-#comments {
-
-}
-#queryResults {
-
-}

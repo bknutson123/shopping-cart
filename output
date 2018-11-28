@@ -3,3 +3,132 @@ Connected
 [0mGET / [36m304 [0m6.298 ms - -[0m
 [0mGET /javascripts/comments.js [36m304 [0m2.123 ms - -[0m
 [0mGET /stylesheets/style.css [36m304 [0m2.239 ms - -[0m
+[0mGET / [36m304 [0m1.907 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.291 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.334 ms - -[0m
+[0mGET / [33m404 [0m6.186 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)
+[0mGET / [33m404 [0m1.458 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)
+[0mGET /favicon.ico [33m404 [0m0.781 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)
+[0mGET / [33m404 [0m0.735 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)
+[0mGET / [33m404 [0m0.756 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)
+[0mGET /favicon.ico [33m404 [0m1.818 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)
+[0mGET / [33m404 [0m2.597 ms - 1644[0m
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:476:15)
+    at Function.Module._load (module.js:424:25)
+    at Module.require (module.js:504:17)
+    at require (internal/module.js:20:19)
+    at new View (/var/www/html/mongo-project/node_modules/express/lib/view.js:81:14)
+    at EventEmitter.render (/var/www/html/mongo-project/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/var/www/html/mongo-project/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/mongo-project/app.js:38:7
+    at Layer.handle_error (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/mongo-project/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/mongo-project/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/mongo-project/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/mongo-project/node_modules/express/lib/router/index.js:317:13)

@@ -1,0 +1,102 @@
+nohup: ignoring input
+Connected
+[0mGET / [32m200 [0m7.695 ms - 1008[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.710 ms - -[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.575 ms - 237[0m
+[0mGET / [36m304 [0m1.411 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.226 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.479 ms - -[0m
+[0mPOST /comments [33m404 [0m487.307 ms - 1692[0m
+[0mPOST /comments [33m404 [0m43.885 ms - 1692[0m
+[0mPOST /comments [33m404 [0m43.593 ms - 1692[0m
+[0mPOST /comments [33m404 [0m29.444 ms - 1692[0m
+[0mPOST /comments [33m404 [0m42.940 ms - 1692[0m
+[0mPOST /comments [33m404 [0m15.433 ms - 1692[0m
+[0mPOST /comments [33m404 [0m7.471 ms - 1692[0m
+[0mGET /comments [33m404 [0m12.543 ms - 1697[0m
+[0mGET /comments [33m404 [0m18.399 ms - 1697[0m
+[0mGET / [36m304 [0m0.797 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m3.166 ms - -[0m
+[0mGET / [36m304 [0m0.366 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.364 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.382 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m9.330 ms - 1697[0m
+[0mGET / [36m304 [0m0.544 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.371 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.239 ms - -[0m
+[0mGET / [32m200 [0m3.444 ms - 1008[0m
+[0mGET / [36m304 [0m2.958 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.466 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.947 ms - -[0m
+[0mGET / [32m200 [0m1.217 ms - 1008[0m
+[0mGET /javascripts/comments.js [32m200 [0m1.093 ms - 2314[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.098 ms - 237[0m
+[0mGET /favicon.ico [33m404 [0m9.449 ms - 1697[0m
+POST comment route
+{ Name: 'Me', Comment: 'hi there' }
+save worked
+{ _id: 5bfc28446e179546ef368220,
+  Name: 'Me',
+  Comment: 'hi there',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m30.551 ms - 2[0m
+In the GET route
+[ { _id: 5be3b672e7db8a3cccc54c17,
+    Name: 'ben',
+    Comment: '',
+    __v: 0 },
+  { _id: 5be3b674e7db8a3cccc54c18, Name: '', Comment: '', __v: 0 },
+  { _id: 5be3b682e7db8a3cccc54c19,
+    Name: 'ben',
+    Comment: '',
+    __v: 0 },
+  { _id: 5bfc28446e179546ef368220,
+    Name: 'Me',
+    Comment: 'hi there',
+    __v: 0 } ]
+[0mGET /comment [32m200 [0m19.648 ms - 281[0m
+removed!!
+In the GET route
+[]
+[0mGET /comment [32m200 [0m2.266 ms - 2[0m
+In the GET route
+[]
+[0mGET /comment [36m304 [0m1.744 ms - -[0m
+POST comment route
+{ Name: 'me', Comment: 'hello' }
+save worked
+{ _id: 5bfc28586e179546ef368221,
+  Name: 'me',
+  Comment: 'hello',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m3.622 ms - 2[0m
+POST comment route
+{ Name: 'you', Comment: 'hi' }
+save worked
+{ _id: 5bfc285f6e179546ef368222,
+  Name: 'you',
+  Comment: 'hi',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m6.362 ms - 2[0m
+In the GET route
+[ { _id: 5bfc28586e179546ef368221,
+    Name: 'me',
+    Comment: 'hello',
+    __v: 0 },
+  { _id: 5bfc285f6e179546ef368222,
+    Name: 'you',
+    Comment: 'hi',
+    __v: 0 } ]
+[0mGET /comment [32m200 [0m2.320 ms - 145[0m
+searching!!
+this is req.body:  
+[]
+[0mGET /search?str= [32m200 [0m8.400 ms - 2[0m
+searching!!
+this is req.body:  you
+[ { _id: 5bfc285f6e179546ef368222,
+    Name: 'you',
+    Comment: 'hi',
+    __v: 0 } ]
+[0mGET /search?str=you [32m200 [0m11.146 ms - 72[0m
+[0mDELETE /delete [0m- [0m- ms - -[0m
